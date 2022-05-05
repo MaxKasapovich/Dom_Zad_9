@@ -94,7 +94,7 @@ public class Car {
     }
 
     public void seatsNum(Car seat) {
-        seat = new Car[int[] getSeatsNum()];
+        seat.getSeatsNum() = new int[]getSeatsNum();
         for (int i = 0; i < getSeatsNum(); i++) {
             Car seatsNum = new Car();
             seatsNum.setInteriorMaterial(getInteriorMaterial());
@@ -111,7 +111,7 @@ public class Car {
         System.out.println("Car price: " + getPrice());
         System.out.println("Number of seats: " + seatsNum()[0].getSeatsNum());
         System.out.println("Material of interior: " + seatsNum()[0].getInteriorMaterial());
-        System.out.println("Material of interior: " + seatsNum()[0].SeatSize());
+        System.out.println("Material of interior: " + seatsNum()[0].getSeatSize());
 
     }
 }
