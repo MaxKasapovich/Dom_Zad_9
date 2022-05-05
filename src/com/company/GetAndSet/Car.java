@@ -74,9 +74,13 @@ public class Car {
     public void setSeats(Seats seats) {
         this.seats = new Seats[5];
         for (int i = 0; i < this.seats.length; i++) {
-            Seats = new Seats;
+            Seats newSeats = new Seats();
+            newSeats.setSeatsNum(i + 1);
+            newSeats.setInteriorMaterial(seats.getInteriorMaterial());
+            newSeats.setSeatSize(seats.getSeatSize());
             this.seats[i] = seats;
-            this.seats.setSeatsNum [i] = i + 1;
+            this.seats[i] = newSeats;
+            }
 
         }
         String interiorMaterial;
