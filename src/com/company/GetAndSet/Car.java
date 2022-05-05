@@ -72,7 +72,7 @@ public class Car {
     }
 
     public void setSeats(Seats[] seats) {
-        seats = new Seats;
+        seats = new Seats[5];
         this.seats = new Seats[5];
         for (int i = 0; i < ; i++) {
 
