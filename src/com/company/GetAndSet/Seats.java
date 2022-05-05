@@ -29,12 +29,4 @@ public class Seats {
     public void setSeatSize(int seatSize) {
         this.seatSize = seatSize;
     }
-
-    public void seatsSpecs() {
-        System.out.println("\nSeats info:");
-        System.out.println("Number of seats: " + seatsNum()[0].getSeatsNum());
-        System.out.println("Material of interior: " + seatsNum()[0].getInteriorMaterial());
-        System.out.println("Material of interior: " + seatsNum()[0].getSeatSize());
-
-    }
 }

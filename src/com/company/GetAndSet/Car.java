@@ -12,11 +12,11 @@ public class Car {
     private Seats[] seats;
 
     public String getBrand() {
-        return model;
+        return brand;
     }
 
-    public void setBrand(String model) {
-        this.model = model;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
     public String getModel() {
@@ -71,6 +71,10 @@ public class Car {
         return seats;
     }
 
+    public void setSeats(Seats[] seats) {
+        this.seats = seats;
+    }
+
     public void setSeats(Seats seats) {
         this.seats = new Seats[5];
         for (int i = 0; i < this.seats.length; i++) {
@@ -81,12 +85,17 @@ public class Car {
             this.seats[i] = newSeats;
             }
         }
-    }
     public void carSpecs() {
         System.out.println("\nCar info:");
         System.out.println("Car brand: " + getBrand());
         System.out.println("Car model: " + getModel());
         System.out.println("Car year: " + getYear());
         System.out.println("Car price: " + getPrice());
+
+        for (int i = 0; i < seats.length; i++) {
+            System.out.println("Number of the seat: " + seats[i].getSeatsNum());
+            System.out.println("Material of the seat: " + seats[i].getInteriorMaterial());
+            System.out.println("Size of the seat: " + seats[i].getSeatSize());
+        }
     }
 }
