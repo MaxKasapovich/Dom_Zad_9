@@ -2,15 +2,15 @@ package com.company.GetAndSet;
 
 public class Seats {
 
-    private int[] seatsNum;
+    private int seatsNum;
     private String interiorMaterial;
     private int seatSize;
 
-    public int[] getSeatsNum() {
+    public int getSeatsNum() {
         return seatsNum;
     }
 
-    public void setSeatsNum(int[] seatsNum) {
+    public void setSeatsNum(int seatsNum) {
         this.seatsNum = seatsNum;
     }
 

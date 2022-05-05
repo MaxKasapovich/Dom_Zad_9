@@ -9,15 +9,7 @@ public class Car {
     private Engine engine;
     private Transmission transmission;
     private Wheels wheels;
-    private Seats seats;
-
-    public String getBrand() {
-        return brand;
-    }
-
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
+    private Seats[] seats;
 
     public String getModel() {
         return model;
@@ -67,11 +59,11 @@ public class Car {
         this.wheels = wheels;
     }
 
-    public Seats getSeats() {
+    public Seats[] getSeats() {
         return seats;
     }
 
-    public void setSeats(Seats seats) {
+    public void setSeats(Seats[] seats) {
         String interiorMaterial;
         int seatSize;
         this.seats = seats;
