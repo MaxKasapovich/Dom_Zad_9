@@ -9,9 +9,7 @@ public class Car {
     private Engine engine;
     private Transmission transmission;
     private Wheels wheels;
-    private int seatsNum[];
-    private String interiorMaterial;
-    private int seatSize;
+    private Seats seats;
 
     public String getBrand() {
         return brand;
@@ -69,31 +67,19 @@ public class Car {
         this.wheels = wheels;
     }
 
-    public int[] getSeatsNum() {
-        return seatsNum;
+    public Seats getSeats() {
+        return seats;
     }
 
-    public void setSeatsNum(int[] seatsNum) {
-        this.seatsNum = seatsNum;
+    public void setSeats(Seats seats) {
+        String interiorMaterial;
+        int seatSize;
+        this.seats = seats;
     }
 
-    public String getInteriorMaterial() {
-        return interiorMaterial;
-    }
+    public void seatsNum() {
+        seats = new Seats[5];
 
-    public void setInteriorMaterial(String interiorMaterial) {
-        this.interiorMaterial = interiorMaterial;
-    }
-
-    public int getSeatSize() {
-        return seatSize;
-    }
-
-    public void setSeatSize(int seatSize) {
-        this.seatSize = seatSize;
-    }
-
-    public void seatsNum(Car seat) {
         seat.getSeatsNum() = new int[]getSeatsNum();
         for (int i = 0; i < getSeatsNum(); i++) {
             Car seatsNum = new Car();
@@ -109,9 +95,5 @@ public class Car {
         System.out.println("Car model: " + getModel());
         System.out.println("Car year: " + getYear());
         System.out.println("Car price: " + getPrice());
-        System.out.println("Number of seats: " + seatsNum()[0].getSeatsNum());
-        System.out.println("Material of interior: " + seatsNum()[0].getInteriorMaterial());
-        System.out.println("Material of interior: " + seatsNum()[0].getSeatSize());
-
     }
 }

@@ -8,6 +8,7 @@ public class Example {
         car1.setBrand("Bravo");
         car1.setYear(2009);
         car1.setPrice(3135.0);
+
         car1.setSeatsNum([]);
         car1.setInteriorMaterial("Leather");
         car1.setSeatSize(6);
