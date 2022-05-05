@@ -75,7 +75,7 @@ public class Car {
         this.seats = seats;
     }
 
-    public void setSeats(Seats seats) {
+    public void setSeatsList(Seats seats) {
         this.seats = new Seats[5];
         for (int i = 0; i < this.seats.length; i++) {
             Seats newSeats = new Seats();

@@ -12,7 +12,7 @@ public class Example {
         Seats seats = new Seats();
         seats.setInteriorMaterial("Leather");
         seats.setSeatSize(6);
-        car1.setSeats(seats);
+        car1.setSeatsList(seats);
 
         Engine engine = new Engine();
         engine.setType("Diesel");
@@ -35,9 +35,9 @@ public class Example {
         car1.setWheels(wheel);
 
         car1.carSpecs();
-        car1.getEngine();
-        car1.getWheels();
-        car1.getTransmission();
+        engine.engineSpecs();
+        wheel.wheelsSpecs();
+        transmission.transmissionSpecs();
     }
 }
 

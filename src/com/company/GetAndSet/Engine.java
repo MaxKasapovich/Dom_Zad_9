@@ -43,8 +43,7 @@ public class Engine {
         System.out.println("\nEngine info:");
         System.out.println("Type: " + getType());
         System.out.println("Number of cylinders: " + getCylinderNum());
-        System.out.println("Number of cylinders: " + getEngineCapacity());
+        System.out.println("Engine Capacity: " + getEngineCapacity());
         System.out.println("Engine row: " + getEngineRow());
     }
-
 }
