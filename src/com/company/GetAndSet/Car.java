@@ -71,10 +71,11 @@ public class Car {
         return seats;
     }
 
-    public void setSeats(Seats[] seats) {
-        seats = new Seats[5];
+    public void setSeats(Seats seats) {
         this.seats = new Seats[5];
-        for (int i = 0; i < ; i++) {
+        for (int i = 0; i < this.seats.length; i++) {
+            this.seats[i] = seats;
+            this.seats.setSeatNum[i] = i +1;
 
         }
         String interiorMaterial;
@@ -82,8 +83,6 @@ public class Car {
 
     }
 
-        for (int i = 0; i < getSeatsNum(); i++) {
-            Car seatsNum = new Car();
             seatsNum.setInteriorMaterial(getInteriorMaterial());
             seatsNum.setSeatSize(getSeatSize());
             seat[i] = seatsNum;
