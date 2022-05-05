@@ -83,8 +83,8 @@ public class Car {
             newSeats.setInteriorMaterial(seats.getInteriorMaterial());
             newSeats.setSeatSize(seats.getSeatSize());
             this.seats[i] = newSeats;
-            }
         }
+    }
     public void carSpecs() {
         System.out.println("\nCar info:");
         System.out.println("Car brand: " + getBrand());
