@@ -11,6 +11,14 @@ public class Car {
     private Wheels wheels;
     private Seats[] seats;
 
+    public String getBrand() {
+        return model;
+    }
+
+    public void setBrand(String model) {
+        this.model = model;
+    }
+
     public String getModel() {
         return model;
     }
