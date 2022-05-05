@@ -9,8 +9,7 @@ public class Example {
         car1.setYear(2009);
         car1.setPrice(3135.0);
 
-        Seats seats = new Seats()
-        seats.setSeatsNum([]);
+        Seats seats = new Seats();
         seats.setInteriorMaterial("Leather");
         seats.setSeatSize(6);
 
