@@ -78,7 +78,6 @@ public class Car {
             newSeats.setSeatsNum(i + 1);
             newSeats.setInteriorMaterial(seats.getInteriorMaterial());
             newSeats.setSeatSize(seats.getSeatSize());
-            this.seats[i] = seats;
             this.seats[i] = newSeats;
             }
         }
